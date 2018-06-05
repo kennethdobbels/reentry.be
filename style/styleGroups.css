@@ -21,7 +21,6 @@ ul{
 .logo{
   text-align: center;
   font-size: 5em;
-  transform: scaleX(-1);
   width: 5%;
   margin-left: 20%;
 }
