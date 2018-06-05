@@ -1,0 +1,281 @@
+body{
+  background:#2E5C89;
+}
+header{
+  height: 100px;
+  max-width: 100%;
+}
+main{
+  height:800px;
+}
+nav{
+  max-width: 60%;
+  margin: 20px auto;
+  font-family: 'Barrio';
+}
+ul{
+  display: flex;
+  justify-content: space-between;
+}
+ul a{
+  color:white;
+  text-decoration: none;
+  padding-top:20px;
+  padding-bottom: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-size: 1.5vw;
+}
+#Layer_1{
+  max-width: 10%;
+  position: absolute;
+  top:20px;
+  left:20px;
+  fill:white;
+}
+a:hover{
+  background-color: #FD7D01;
+  color:white;
+}
+#Layer_1:hover{
+  fill: #FD7D01;
+}
+#Layer_2{
+  max-width: 20%;
+  fill:green;
+  position: fixed;
+  top:500px;
+  left:-25px;
+}
+img{
+  max-width: 60%;
+  display: block;
+  margin: 0 auto;
+}
+.info{
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 25%;
+}
+h1{
+  font-size: 2em;
+  color:white;
+  margin-bottom: 2%;
+}
+p{
+  color:white;
+  font-size: 1em;
+}
+
+
+
+
+
+
+
+p {
+      margin-bottom: 10px;
+}
+
+.fieldset-wrapper {
+      padding: 1em;
+      margin-bottom: 2em;
+      border: 1px solid #eee;
+      background-image: url("../achtergrond.png");
+      box-shadow: 10px 10px 30px;
+
+}
+
+
+/* om een compatibiliteitsprobleem op te lossen in bepaalde oudere browsers */
+:root .fieldset-wrapper {
+      border: 0;
+}
+
+legend {
+      padding: 0 0 .5em 0;
+      font-weight: bold;
+      color: black;
+      display: table;
+      font-size: 1.2em;
+      margin-bottom: .5em;
+}
+
+input, textarea {
+      font: inherit;
+}
+
+.field-text {
+      max-width: 20em;
+}
+
+.field-text label {
+      cursor: pointer;
+}
+
+.field-text label, .field-text input, .field-text textarea {
+      width: 100%;
+      box-sizing: border-box;
+      margin-top: 0.5em;
+}
+
+.field-text input {
+      padding: .375em .3125em .3125em;
+      border: 1px solid #ccc;
+      border-radius: .25em;
+      -webkit-appearance: none;
+}
+
+
+.field-text input:focus {
+      box-shadow: 0 0 .5em rgba(93, 162, 248, 0.5);
+
+      outline: 0;
+}
+
+textarea {
+      height: 10em;
+      resize: vertical;
+}
+
+input[type="radio"] {
+      margin-right: .75em;
+}
+
+button {
+      cursor: pointer;
+      border: 0;
+      padding: .5em 1em;
+      color: #fff;
+      border-radius: .25em;
+      font-size: 1em;
+      background-color: #173b6d;
+      background-image: linear-gradient(to bottom, #1a4a8e, #173b6d);
+      box-shadow: 0 .25em 0 rgba(23, 59, 109, 0.3), inset 0 1px 0 rgba(0, 0, 0, 0.3);
+
+}
+
+button:focus {
+      background-color: #2158a9;
+      background-image: linear-gradient(to bottom, #2063c0, #1d4d90);
+      box-shadow: 0 .25em 0 rgba(23, 59, 109, 0.3), inset 0 1px 0 rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-input-placeholder {
+      font-style: italic;
+}
+
+:-ms-input-placeholder {
+      font-style: italic;
+}
+
+::-moz-placeholder {
+      font-style: italic;
+}
+
+.form-help {
+      /* De hulp standaard niet tonen, zonder te verbergen voor screen readers */
+      display: block;
+      position: absolute;
+      overflow: hidden;
+      width: 1px;
+      height: 1px;
+      clip: rect(0 0 0 0);
+}
+
+input:focus + .form-help {
+      padding: .5em;
+      margin-top: .5em;
+      border: 1px solid #2a80fa;
+      border-radius: .25em;
+      font-style: italic;
+      color: #737373;
+      background-color: #fff;
+      /* Het verbergen ongedaan maken */
+      position: static;
+      width: auto;
+      height: auto;
+      crop: none;
+}
+
+.field-text :invalid {
+      border-color: #e72633;
+      box-shadow: 0 0 .5em rgba(229, 43, 37, 0.5);
+}
+
+/* neutraliseren van fieldset styling, door reset.css. Maar indien niet via deze code:
+
+fieldset {
+      border: 0;
+      padding: 0.01px 0 0 0;             margin: 0;
+      min-width: 0;
+      display: table-cell;
+}
+
+@-moz-document url-prefix() { fieldset {
+      display: table-cell;
+}
+}
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1385px) {
+  ul a {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  #Layer_2{
+    display: none;
+  }
+}
+@media(max-width:1067px){
+  ul a{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media(max-width:1000px){
+  form{
+    width: 150%;
+  }
+}
+@media(max-width:860px){
+  ul a{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+@media(max-width:700px){
+
+  nav a:hover{
+    background-color: #2E5C89;
+    color:white;
+  }
+}
+@media(max-width:670px){
+  ul a{
+    font-size: 0.5em;
+  }
+}
+@media(max-width:450px){
+  ul a{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
